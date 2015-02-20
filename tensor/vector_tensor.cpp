@@ -9,16 +9,6 @@
 
 using namespace std;
 
-Vector::Vector(int length) {
-  assert(length > 0);
-  total_length = length; // can't put in initializer list?
-  dim = 1;
-  array = new double[total_length];
-  size = new int[1];
-  size[0] = length;
-  this->fill(0.);
-}
-
 void Vector::print() const {
   cout << " = [";
   for (int i = 0; i < total_length-1; i++)
